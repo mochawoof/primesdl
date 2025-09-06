@@ -22,7 +22,7 @@ static SDL_Renderer *renderer = NULL;
 SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[])
 {
     /* Create the window */
-    if (!SDL_CreateWindowAndRenderer("When you have no ideas. The game. 2", 480, 360, 0, &window, &renderer)) {
+    if (!SDL_CreateWindowAndRenderer("When you have no ideas. The game.", 480, 360, 0, &window, &renderer)) {
         SDL_Log("Couldn't create window and renderer: %s", SDL_GetError());
         return SDL_APP_FAILURE;
     }
